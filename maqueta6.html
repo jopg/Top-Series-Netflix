@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/maqueta6.css" />
+      <link rel="stylesheet" href="css/slider.css" />
+      <link rel="icon" href="images/icon.ico" />
+      <title>Top Series Netflix</title>
+      <script
+         src="https://kit.fontawesome.com/592c8737c7.js"
+         crossorigin="anonymous"
+      ></script>
+      <script src="js/slider.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1><a href="/">TOP Series Netflix</a></h1>
+         <nav><a href="/">Volver a la página de inicio</a></nav>
+      </header>
+      <div class="main">
+         <article>
+            <h2 class="h-slider">Carrusel de Películas</h2>
+            <div class="contenedor">
+               <div class="imagen actual">
+                  <img src="images/slideshow/s1.jpg" alt="Imagen 1" />
+                  <div class="texto">En el corazón del mar</div>
+               </div>
+
+               <div class="imagen">
+                  <img src="images/slideshow/s2.jpg" alt="Imagen 2" />
+                  <div class="texto">It - Eso</div>
+               </div>
+
+               <div class="imagen">
+                  <img src="images/slideshow/s3.jpg" alt="Imagen 3" />
+                  <div class="texto">The Nightingale</div>
+               </div>
+
+               <div class="imagen">
+                  <img src="images/slideshow/s4.jpg" alt="Imagen 4" />
+                  <div class="texto">2012</div>
+               </div>
+
+               <a href="#" class="anterior" onclick="anterior();"
+                  ><i class="fas fa-chevron-left"></i
+               ></a>
+               <a href="#" class="siguiente" onclick="siguiente();"
+                  ><i class="fas fa-chevron-right"></i
+               ></a>
+
+               <div class="puntos">
+                  <span class="punto pto-activo" onclick="mostrar(0);"></span>
+                  <span class="punto" onclick="mostrar(1);"></span>
+                  <span class="punto" onclick="mostrar(2);"></span>
+                  <span class="punto" onclick="mostrar(3);"></span>
+               </div>
+
+               <div class="boton">
+                  <a href="#" onclick="playpause();">
+                     <i class="fas fa-pause" id="btn_pp"></i>
+                     <!-- <i class="fas fa-pause"></i> -->
+                  </a>
+               </div>
+            </div>
+            <div class="sipnosis">
+               <p>
+                  <span>1. En el corazón del mar: </span> En el invierno de
+                  1820, Owen Chase (Hemsworth) y otros marineros de la
+                  tripulación del Essex sobrevivieron en alta mar en durísimas
+                  condiciones después de que el barco chocara con una enorme
+                  ballena blanca. Owen, obsesionado con la idea de dar caza al
+                  cetáceo, se enfrentó a las tormentas, al hambre y a la
+                  desesperación.
+               </p>
+               <p>
+                  <span>2. It: </span>Cuando empiezan a desparecer niños en el
+                  pueblo de Derry (Maine), un pandilla de amigos lidia con sus
+                  mayores miedos al enfrentarse a un malvado payaso llamado
+                  Pennywise, cuya historia de asesinatos y violencia data de
+                  siglos.
+               </p>
+               <p>
+                  <span>3. The Nightingale: </span>Situada en 1825 en Tasmania,
+                  una mujer irlandesa convicta busca venganza por la muerte de
+                  su familia. En su camino, se une a un rastreador aborigen
+                  llamado Billy, que también posee un pasado violento que le ha
+                  dejado marcado.
+               </p>
+               <p>
+                  <span>4. 2012: </span>En el calendario de los mayas aparece
+                  señalado el año 2012 como la fecha en la que se producirá el
+                  fin del mundo, que irá acompañado de diversas catástrofes
+                  naturales: erupciones volcánicas, tifones, glaciares que
+                  inundarán el planeta. Cuando el escritor Jackson Curtis (John
+                  Cusack) y sus hijos regresan a casa, una intensa actividad
+                  sísmica recorre la Costa Oeste de los Estados Unidos.
+               </p>
+            </div>
+         </article>
+         <aside>
+            <h2 class="h-publi">Publicidad</h2>
+            <img src="images/dark.jpg" alt="" />
+            <p>
+               "Dark", estrenada en 2017, combina el thriller con la ciencia
+               ficción. La serie se enfoca en cuatro familias involucradas en
+               misteriosos viajes en el tiempo, a lo largo de tres generaciones,
+               que darán pie al apocalipsis. El destino y libedrío son algunos
+               de los temas que aborda. La primera temporada contó con 10
+               episodios y la segunda ocho. La última entrega también contará
+               con 8 capítulos.
+            </p>
+            <span class="m-acceder"
+               ><a
+                  href="https://www.netflix.com/ve/title/80100172"
+                  target="_blank"
+                  >Acceder</a
+               ></span
+            >
+         </aside>
+      </div>
+      <footer>
+         <p>©TOP Series Netflix - 2020. TODOS LOS DERECHOS RESERVADOS</p>
+      </footer>
+   </body>
+</html>

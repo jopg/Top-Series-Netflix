@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slider.css">
+    <title>Slider</title>
+    <script src="https://kit.fontawesome.com/592c8737c7.js" crossorigin="anonymous"></script>
+    <script src="js/slider.js"></script>
+</head>
+<body>
+    <h1>Carrusel de Imágenes - <span>HTML</span> / <span>CSS</span> / <span>JavaScript</span></h1>
+    <div class="contenedor">    
+        <div class="imagen actual">
+            <img src="images/slideshow/s1.jpg" alt="Imagen 1">
+            <div class="texto">Mad Max</div>
+        </div>
+
+            <div class="imagen">
+                <img src="images/slideshow/s2.jpg" alt="Imagen 2">
+                <div class="texto">Mision Imposible</div>
+            </div>
+
+        <div class="imagen">
+            <img src="images/slideshow/s3.jpg" alt="Imagen 3">
+            <div class="texto">Contra Todos</div>
+        </div>
+
+            <div class="imagen">
+                <img src="images/slideshow/s4.jpg" alt="Imagen 4">
+                <div class="texto">El Martillo de Guerra</div>
+            </div>
+
+        <a href="#" class="anterior" onclick="anterior();"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="siguiente"  onclick="siguiente();"><i class="fas fa-chevron-right"></i></a>
+
+        <div class="puntos">
+            <span class="punto pto-activo" onclick="mostrar(0);"></span>
+            <span class="punto" onclick="mostrar(1);"></span>
+            <span class="punto" onclick="mostrar(2);"></span>
+            <span class="punto" onclick="mostrar(3);"></span>
+        </div>
+    
+        <div class="boton">
+            <a href="#" onclick="playpause();">
+                <i class="fas fa-pause" id="btn_pp"></i>
+                <!-- <i class="fas fa-pause"></i> -->
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>
